@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("dryfruits1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.box {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+height: 100%;
+box-sizing: border-box;
+/*background: rgba(187, 146, 6, 0.6);*/
+background: rgba(44, 46, 82,0);
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+
+}
+.logo_empresa{
+    width: 20em;
+    height: 9.5em;
+    border-radius: 12px;
+}
+.box a img{
+width: 3em;
+height: 3em;
+margin: 10px;
+}
+.box div:nth-child(2){
+color: #f5c800;
+font-family: 'Fredoka One', cursive;
+text-shadow: 3px 3px #ba910e;
+/*text-shadow: 3px 3px rgb(72, 75, 150, .8);*/
+letter-spacing: 3px;
+}
+h1{
+font-size: 3.3em;
+text-transform: uppercase;
+}
+p{
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 600;
+}
+/**/
+ul {
+display: flex;
+justify-content: center;
+padding: 0;
+}
+
+ul li {
+list-style: none;
+}
+
+ul li a {
+width: 50px;
+height: 50px;
+background-color: #fff;
+text-align: center;
+line-height: 50px;
+font-size: 35px;
+margin: 0 10px;
+display: block;
+border-radius: 50%;
+position: relative;
+overflow: hidden;
+border: 3px solid #fff;
+z-index: 1;
+}
+
+ul li a .icon {
+position: relative;
+color:  rgba(72, 75, 150, 1);
+transition: .5s;
+z-index: 3;
+}
+
+ul li a:hover .icon {
+color: #fff;
+}
+
+ul li a:before {
+content: "";
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 100%;
+background: #f00;
+transition: .5s;
+z-index: 2;
+}
+
+ul li a:hover:before {
+top: 0;
+}
+
+ul li:nth-child(1) a:before{
+background: #3b5999;
+}
+ul li:nth-child(2) a:before {
+background: #c71d43;
+}
+ul li:nth-child(3) a:before{
+background: #2bb140;
+}
+
+@media(max-width: 411px){
+    .box{
+        margin: 0;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    .logo_empresa{
+        width: 15em;
+        height: 7em;
+        border-radius: 12px;
+    }
+}
